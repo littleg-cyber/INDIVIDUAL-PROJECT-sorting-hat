@@ -23,7 +23,7 @@ const cardsOnDom = (array) => {
   // define variable to retrieve strings
   let domString = "";
   // open array using .foreach to access objects
-  studentsArray.forEach(function (singleStudentObjects) {
+  array.forEach(function (singleStudentObjects) {
   // take empty domString variable and add code to it
   domString = 
     domString +
@@ -74,3 +74,12 @@ showHufflepuffButton.addEventListener("click", () => {
   const hufflepuffHouse = filter(studentsArray, "Hufflepuff");
   cardsOnDom(hufflepuffHouse);
 });
+
+//function that creates a new card
+const createStudnet = (event) => {
+  event.preventDefault ();
+  //grab values from form
+  const name = document.querySelector("#student");
+  console.log(student);
+  console.log(student.value);
+}
