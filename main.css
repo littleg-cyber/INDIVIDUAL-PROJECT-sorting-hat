@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+
+.welcome-box {
+  text-align: center;
+}
+
+.form-flex {
+  display: flex;
+}
+
+.house-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* .left-side {
+
+} */
