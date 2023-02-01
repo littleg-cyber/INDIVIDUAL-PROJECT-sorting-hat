@@ -74,6 +74,14 @@ showHufflepuffButton.addEventListener("click", () => {
   const hufflepuffHouse = filter(studentsArray, "Hufflepuff");
   cardsOnDom(hufflepuffHouse);
 });
+showRavenclawButton.addEventListener("click", () => {
+  const ravenclawHouse = filter(studentsArray, "Ravenclaw");
+  cardsOnDom(ravenclawHouse);
+});
+showSlytherinButton.addEventListener("click", () => {
+  const slytherinHouse = filter(studentsArray, "Slytherin");
+  cardsOnDom(slytherinHouse);
+});
 
 //function that creates a new card
 const createStudnet = (event) => {
