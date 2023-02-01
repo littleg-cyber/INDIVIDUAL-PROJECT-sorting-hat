@@ -16,6 +16,13 @@ h1 {
   gap: 30px;
 }
 
+#hidden-div {
+  display: none;
+}
+
+#sorting-hat {
+  text-align: center;
+}
 /* .left-side {
 
 } */

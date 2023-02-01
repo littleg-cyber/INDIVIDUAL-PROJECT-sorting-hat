@@ -19,6 +19,27 @@ const studentsArray = [
   },
 ];
 
+
+const hogwartsHouses = ['Gryffindor', 'Hufflepugg', 'Slytherin', 'Ravenclaw'];
+const housedStudents = [];
+const expelledStudents = [];
+
+const sortingHat = document.getElementById("sorting-hat");
+const targetDiv = document.getElementById("hidden-div");
+const btn = document.getElementById("get-startedbtn");
+btn.onclick = function () {
+  if (targetDiv.style.display = "none") {
+    targetDiv.style.display = "block";
+  }
+  if (sortingHat.style.display !== "none") {
+    sortingHat.style.display = "none";
+  } else {
+    sortingHat.style.display = "block";
+  }
+}
+
+
+
 const cardsOnDom = (array) => {
   // define variable to retrieve strings
   let domString = "";
@@ -82,12 +103,3 @@ showSlytherinButton.addEventListener("click", () => {
   const slytherinHouse = filter(studentsArray, "Slytherin");
   cardsOnDom(slytherinHouse);
 });
-
-//function that creates a new card
-const createStudnet = (event) => {
-  event.preventDefault ();
-  //grab values from form
-  const name = document.querySelector("#student");
-  console.log(student);
-  console.log(student.value);
-}
