@@ -23,6 +23,27 @@ h1 {
 #sorting-hat {
   text-align: center;
 }
-/* .left-side {
 
-} */
+.top-container {
+  border: 3px black;
+  width: 1500px;
+  text-align: center;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container1 {
+  border: 3px black;
+  width: 750px;
+  height: 750px;
+}
+
+.container2 {
+  border:black;
+  width: 750px;
+  height: 750px;
+  text-align: center;
+}
